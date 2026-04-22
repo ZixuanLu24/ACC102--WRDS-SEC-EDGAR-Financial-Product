@@ -2,42 +2,42 @@
 ## WRDS & SEC EDGAR Financial Product
  
 ## 1. Problem & User
-   *This interactive data analysis tool is designed for financial analysts, finance students, and investors. It solves the critical problem of fragmented financial data by integrating quantitative market data (WRDS), fundamental corporate data (SEC), and macroeconomic indicators (World Bank) into a single, seamless interactive platform.Users can use this tool for interactive visual WRDS data export, calculation of 20+ core financial indicators, and SEC EDGAR integration to crawl and parse 10‑K, 10‑Q, 8‑K filings and reconstruct US GAAP financial statements. It supports an interactive DCF model with real‑time OCF data and waterfall visualization, plus market benchmark analysis to compare target companies against major indices (SPY for S&P 500, QQQ for Nasdaq 100).
+   ·This interactive data analysis tool is designed for financial analysts, finance students, and investors. It solves the critical problem of fragmented financial data by integrating quantitative market data (WRDS), fundamental corporate data (SEC), and macroeconomic indicators (World Bank) into a single, seamless interactive platform.Users can use this tool for interactive visual WRDS data export, calculation of 20+ core financial indicators, and SEC EDGAR integration to crawl and parse 10‑K, 10‑Q, 8‑K filings and reconstruct US GAAP financial statements. It supports an interactive DCF model with real‑time OCF data and waterfall visualization, plus market benchmark analysis to compare target companies against major indices (SPY for S&P 500, QQQ for Nasdaq 100).
 
 
 ## 2. Data Sources
    
-   ·WRDS CRSP Database:** Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.
-   ·SEC EDGAR API:** Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).
-   ·World Bank API:** Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.
-   ·Access Date:* Live API and database retrieval at runtime.
+   ·WRDS CRSP Database:** Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.  
+   ·SEC EDGAR API:** Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).  
+   ·World Bank API:** Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.  
+   ·Access Date:* Live API and database retrieval at runtime.  
 
 ## 3. Methodology
-   ·Data Acquisition:** Utilizes `sqlalchemy` for secure WRDS database queries and `requests` for RESTful API calls to SEC EDGAR and the World Bank.
-   ·Data Processing:** Employs `pandas` and `numpy` for missing value handling, forward-filling methodologies, and corporate action-adjusted price calculations.
-   ·Financial Analytics:** Computes advanced quantitative metrics, including Annualized Return, Volatility, VaR (Historical & Parametric), CVaR, Maximum Drawdown, Sharpe Ratio, and DuPont analysis.
-   ·Valuation Modeling:** Implements a dynamic Discounted Cash Flow (DCF) model, computing the Present Value of future free cash flows and Terminal Value to derive an asset's Intrinsic Value.
-   ·Automated Reporting:** Streamlines the creation of polished `.xlsx` financial models (`openpyxl`) and `.docx` investment reports (`python-docx`).
-   ·Visualization:** Uses `plotly` to render interactive line charts, bar charts, correlation heatmaps, and DCF waterfall charts.
+   ·Data Acquisition:** Utilizes `sqlalchemy` for secure WRDS database queries and `requests` for RESTful API calls to SEC EDGAR and the World Bank.  
+   ·Data Processing:** Employs `pandas` and `numpy` for missing value handling, forward-filling methodologies, and corporate action-adjusted price calculations.  
+   ·Financial Analytics:** Computes advanced quantitative metrics, including Annualized Return, Volatility, VaR (Historical & Parametric), CVaR, Maximum Drawdown, Sharpe Ratio, and DuPont analysis.  
+   ·Valuation Modeling:** Implements a dynamic Discounted Cash Flow (DCF) model, computing the Present Value of future free cash flows and Terminal Value to derive an asset's Intrinsic Value.  
+   ·Automated Reporting:** Streamlines the creation of polished `.xlsx` financial models (`openpyxl`) and `.docx` investment reports (`python-docx`).  
+   ·Visualization:** Uses `plotly` to render interactive line charts, bar charts, correlation heatmaps, and DCF waterfall charts.  
 
 ## 4. Key Findings
-   ·Holistic Risk-Adjusted Assessment:** The platform successfully demonstrates that evaluating asset performance requires a synthesis of cumulative returns, rolling volatility, and maximum drawdown, rather than looking at isolated metrics.
-   ·Qualitative Edge:Automated text-mining of SEC filings (MD&A and CEO quotes) provides critical qualitative context to purely quantitative metrics, offering a complete picture of corporate health.
-   ·Valuation Disparities:** The interactive DCF module frequently reveals actionable disparities between a stock's current trading price and its intrinsic value based on fundamental operating cash flows.
+   ·Holistic Risk-Adjusted Assessment:** The platform successfully demonstrates that evaluating asset performance requires a synthesis of cumulative returns, rolling volatility, and maximum drawdown, rather than looking at isolated metrics.  
+   ·Qualitative Edge:Automated text-mining of SEC filings (MD&A and CEO quotes) provides critical qualitative context to purely quantitative metrics, offering a complete picture of corporate health.  
+   ·Valuation Disparities:** The interactive DCF module frequently reveals actionable disparities between a stock's current trading price and its intrinsic value based on fundamental operating cash flows.  
 
 ## 5. How to Run (Local Deployment)
 
-   ·Step 1: Download and Save the Project
-1. Download the project files (or clone the repository).
-2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).
+   ·Step 1: Download and Save the Project  
+1. Download the project files (or clone the repository).  
+2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).  
 
    ·Step 2: Open Terminal and Navigate to the Folder
-You must point your terminal to the exact location where you saved the folder.（For example, if you save the project folder on your computer desktop, the exact terminal path to the project is the desktop.）
+You must point your terminal to the exact location where you saved the folder.（For example, if you save the project folder on your computer desktop, the exact terminal path to the project is the desktop.）  
 
    ·For macOS (Apple):
-   1. Open the **Terminal** application (Press `Command + Space`, type `Terminal`, and press Enter).
-   2. Use the `cd` (change directory) command to navigate to your folder. Please refer to the instruction template:
-   cd/Users/"Username"/"The location of the project folder"/"Folder name"
+   1. Open the **Terminal** application (Press `Command + Space`, type `Terminal`, and press Enter).  
+   2. Use the `cd` (change directory) command to navigate to your folder. Please refer to the instruction template:  
+   cd/Users/"Username"/"The location of the project folder"/"Folder name"  
  
    For example, if your computer username is "wuduu", the project folder is located on the desktop, and the folder name is "Financial_App", type:
      
@@ -45,7 +45,7 @@ You must point your terminal to the exact location where you saved the folder.�
   
 
    ·For Windows Users:**
-   1. Open the **Command Prompt** (Press `Windows Key + R`, type `cmd`, and press Enter).
+   1. Open the **Command Prompt** (Press `Windows Key + R`, type `cmd`, and press Enter).  
    2. Use the `cd` command to navigate to your folder. For example:
    
    cd C:/Users/”YourUsername“/"The location of the project folder"/"Folder name"
