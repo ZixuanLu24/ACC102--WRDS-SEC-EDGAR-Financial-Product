@@ -1,0 +1,56 @@
+·List of requirements:
+
+streamlit
+pandas
+numpy
+sqlalchemy
+plotly
+openpyxl
+python-docx
+wbdata
+sec-edgar-downloader
+kaleido
+psycopg2-binary
+
+
+
+·Installation Command：
+
+pip install streamlit pandas numpy sqlalchemy plotly openpyxl python-docx wbdata sec-edgar-downloader kaleido psycopg2-binary
+
+
+
+·Roles of Each Requirement：
+
+·streamlit
+Used to build, render, and deploy the interactive web application interface. It provides the UI components (buttons, sliders, tables) for the entire app.
+
+·pandas
+Essential for data manipulation, analysis, and cleaning. It handles the structured data fetched from databases or APIs using its powerful DataFrame structures.
+
+·numpy
+Provides support for large, multi-dimensional arrays and advanced mathematical/statistical functions used in financial metrics calculations (e.g., standard deviation, square roots).
+
+·sqlalchemy
+An SQL toolkit that provides the engine to establish a connection and securely execute SQL queries against the WRDS PostgreSQL database.
+
+·plotly
+Used for generating highly interactive, high-quality graphs and financial charts (like line charts, bar charts, heatmaps, and waterfall charts) displayed in the web UI.
+
+·openpyxl
+Required to read and write Excel (.xlsx) files. It enables the comprehensive data export functionality, including formatting cells and embedding images into worksheets.
+
+·python-docx
+Used to programmatically create, format, and structure Microsoft Word (.docx) documents. It is the core engine for generating the Wall Street-grade investment reports.
+
+·wbdata
+A Python wrapper for the World Bank API, designed to simplify the process of searching and fetching global macroeconomic data (like GDP, CPI) programmatically.
+
+·sec-edgar-downloader
+A dedicated package to automate the downloading of corporate filings (such as 10-K, 10-Q, 8-K) and financial disclosures directly from the US SEC EDGAR database.
+
+·kaleido
+A fast, cross-platform library used for converting interactive Plotly charts into static image formats (like PNG). This is strictly required to embed generated charts into the exported Word and Excel files.
+
+·psycopg2-binary
+The PostgreSQL database adapter/driver for Python. It works silently under the hood with SQLAlchemy to physically establish the network connection to the WRDS servers.
