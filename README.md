@@ -76,25 +76,21 @@ You must point your terminal to the exact location where you saved the folder.�
    Demo Video: []
  
 ## 7. Limitations & Next Steps
-   ·The application depends heavily on the availability and uptime of the WRDS PostgreSQL database and SEC EDGAR API.
-   
-   ·Current SEC text extraction relies on basic regex and heuristic rules, which may miss nuanced qualitative statements or non-standard filing formats.
-   
-   ·Text embedded in images or complex nested HTML tables in SEC filings cannot be parsed, leading to occasional “Data not found” errors.
-   
-   ·The current f‑string SQL query format introduces potential SQL injection risks in enterprise environments.
-   
-   ·SEC EDGAR API rate limits may cause timeouts during bulk ticker requests.
+   ·The application depends heavily on the availability and uptime of the WRDS PostgreSQL database and SEC EDGAR API.  
+   ·Current SEC text extraction relies on basic regex and heuristic rules, which may miss nuanced qualitative statements or non-standard filing formats.  
+   ·Text embedded in images or complex nested HTML tables in SEC filings cannot be parsed, leading to occasional “Data not found” errors.  
+   ·The current f‑string SQL query format introduces potential SQL injection risks in enterprise environments.  
+   ·SEC EDGAR API rate limits may cause timeouts during bulk ticker requests.  
 
    Next Steps: 
-   ·Enhanced SEC Parsing
-   Integrate OCR (Tesseract / cloud vision APIs) to extract text from images in filings.
+   ·Enhanced SEC Parsing  
+   Integrate OCR (Tesseract / cloud vision APIs) to extract text from images in filings.  
 Adopt advanced libraries like unstructured.io or sec-parser for better table and document layout analysis.
-Use LLM-powered summarization to improve accuracy and readability of extracted content.
-   ·Security Upgrade
-   Replace f‑string queries with SQLAlchemy parameterized statements to prevent SQL injection.
-   ·API Stability
-Implement exponential backoff retry (via tenacity) and request throttling to handle SEC EDGAR rate limits.
-   ·Advanced Analytics
-   Integrate financial NLP models (e.g., FinBERT) for precise sentiment analysis on SEC filings.
-   Add a portfolio optimization module supporting Efficient Frontier and Markowitz allocation.
+Use LLM-powered summarization to improve accuracy and readability of extracted content.  
+   ·Security Upgrade  
+   Replace f‑string queries with SQLAlchemy parameterized statements to prevent SQL injection.  
+   ·API Stability  
+Implement exponential backoff retry (via tenacity) and request throttling to handle SEC EDGAR rate limits.  
+   ·Advanced Analytics  
+   Integrate financial NLP models (e.g., FinBERT) for precise sentiment analysis on SEC filings.  
+   Add a portfolio optimization module supporting Efficient Frontier and Markowitz allocation.  
