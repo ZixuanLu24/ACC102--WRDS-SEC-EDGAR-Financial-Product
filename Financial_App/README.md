@@ -8,8 +8,14 @@
 ## 2. Data Sources
    
    *WRDS CRSP Database: Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.  
-   *SEC EDGAR API: Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).  
-   *World Bank API: Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.  
+   Access Link: [https://wrds-www.wharton.upenn.edu/]  
+   
+   *SEC EDGAR API: Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).   
+   Access Link: [https://www.sec.gov/edgar/search/]  
+   
+   *World Bank API: Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.   
+   Access Link: [https://data.worldbank.org/]  
+   
    *Access Date: Live API and database retrieval at runtime.  
 
 ## 3. Methodology
@@ -24,7 +30,7 @@
    *Holistic Risk-Adjusted Assessment: The platform successfully demonstrates that evaluating asset performance requires a synthesis of cumulative returns, rolling volatility, and maximum drawdown, rather than looking at isolated metrics.  
    *Qualitative Edge: Automated text-mining of SEC filings (MD&A and CEO quotes) provides critical qualitative context to purely quantitative metrics, offering a complete picture of corporate health.  
    *Valuation Disparities: The interactive DCF module frequently reveals actionable disparities between a stock's current trading price and its intrinsic value based on fundamental operating cash flows.  
-   *Market Comparison Analysis: The benchmarking module enables direct performance comparison between target companies and broad market indices (e.g., SPY for S&P 500, QQQ for Nasdaq 100). By combining interactive cumulative return charts and risk‑return scatter plots, it accurately calculates Alpha, Beta, and Tracking Error, allowing users to objectively identify whether a company outperforms or underperforms the overall market.
+   Market Comparison Analysis: The benchmarking module enables direct performance comparison between target companies and broad market indices (e.g., SPY for S&P 500, QQQ for Nasdaq 100). By combining interactive cumulative return charts and risk‑return scatter plots, it accurately calculates Alpha, Beta, and Tracking Error, allowing users to objectively identify whether a company outperforms or underperforms the overall market.
 
 ## 5. How to Run (Local Deployment)
 
