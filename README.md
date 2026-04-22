@@ -51,10 +51,10 @@ You must point your terminal to the exact location where you saved the folder.�
    cd C:/Users/”YourUsername“/"The location of the project folder"/"Folder name"
 
    For example, if your computer username is "Amy", the project folder is located on the desktop, and the folder name is "Financial_App", type:
-   If files saved to the desktop are stored by default on the C drive, type:
-   cd C:\Users/Amy/Desktop/Financial_App
-   Otherwise,
-   cd (the storage location of desktop files, eg. C or D or F):\Users/Amy/Desktop/Financial_App 
+   If files saved to the desktop are stored by default on the C drive, type:  
+   cd C:\Users/Amy/Desktop/Financial_App  
+   Otherwise,  
+   cd (the storage location of desktop files, eg. C or D or F):\Users/Amy/Desktop/Financial_App   
 
 
    ·Step 3: Install Required Dependencies**
