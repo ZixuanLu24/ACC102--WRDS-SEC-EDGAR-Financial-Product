@@ -43,7 +43,7 @@ You must point your terminal to the exact location where you saved the folder.�
     cd /Users/wuduu/Desktop/Financial_App
   
 
-   ·For Windows Users:**
+   ·For Windows Users:
    1. Open the **Command Prompt** (Press `Windows Key + R`, type `cmd`, and press Enter).
    2. Use the `cd` command to navigate to your folder. For example:
 
@@ -52,14 +52,14 @@ You must point your terminal to the exact location where you saved the folder.�
    For example, if your computer username is "Amy", the project folder is located on the desktop, and the folder name is "Financial_App", type:
    If files saved to the desktop are stored by default on the C drive, type:  
 
-   cd C:\Users/Amy/Desktop/Financial_App
+   cd C:/Users/Amy/Desktop/Financial_App
    Otherwise,  
 
-   cd (the storage location of desktop files, eg. C or D or F):\Users/Amy/Desktop/Financial_App 
+   cd (the storage location of desktop files, eg. C or D or F):/Users/Amy/Desktop/Financial_App  
 
 
-   ·Step 3: Install Required Dependencies**
-    Once your terminal is operating inside the correct project folder, install all necessary Python libraries by executing the following command:
+   ·Step 3: Install Required Dependencies：  
+   Once your terminal is operating inside the correct project folder, install all necessary Python libraries by executing the following command:
 
 pip install streamlit pandas numpy sqlalchemy plotly openpyxl python-docx wbdata sec-edgar-downloader kaleido psycopg2-binary
    
