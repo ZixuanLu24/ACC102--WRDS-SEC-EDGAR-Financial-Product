@@ -7,23 +7,23 @@
 
 ## 2. Data Sources
    
-   *WRDS CRSP Database:** Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.  
-   *SEC EDGAR API:Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).  
-   *World Bank API:Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.  
-   *Access Date:* Live API and database retrieval at runtime.  
+   *WRDS CRSP Database: Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.  
+   *SEC EDGAR API: Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).  
+   *World Bank API: Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.  
+   *Access Date: Live API and database retrieval at runtime.  
 
 ## 3. Methodology
-   *Data Acquisition:** Utilizes `sqlalchemy` for secure WRDS database queries and `requests` for RESTful API calls to SEC EDGAR and the World Bank.  
-   *Data Processing:** Employs `pandas` and `numpy` for missing value handling, forward-filling methodologies, and corporate action-adjusted price calculations.  
-   *Financial Analytics:** Computes advanced quantitative metrics, including Annualized Return, Volatility, VaR (Historical & Parametric), CVaR, Maximum Drawdown, Sharpe Ratio, and DuPont analysis.  
-   *Valuation Modeling:** Implements a dynamic Discounted Cash Flow (DCF) model, computing the Present Value of future free cash flows and Terminal Value to derive an asset's Intrinsic Value.  
-   *Automated Reporting:** Streamlines the creation of polished `.xlsx` financial models (`openpyxl`) and `.docx` investment reports (`python-docx`).  
-   *Visualization:** Uses `plotly` to render interactive line charts, bar charts, correlation heatmaps, and DCF waterfall charts.  
+   *Data Acquisition: Utilizes `sqlalchemy` for secure WRDS database queries and `requests` for RESTful API calls to SEC EDGAR and the World Bank.  
+   *Data Processing: Employs `pandas` and `numpy` for missing value handling, forward-filling methodologies, and corporate action-adjusted price calculations.  
+   *Financial Analytics: Computes advanced quantitative metrics, including Annualized Return, Volatility, VaR (Historical & Parametric), CVaR, Maximum Drawdown, Sharpe Ratio, and DuPont analysis.  
+   *Valuation Modeling: Implements a dynamic Discounted Cash Flow (DCF) model, computing the Present Value of future free cash flows and Terminal Value to derive an asset's Intrinsic Value.  
+   *Automated Reporting: Streamlines the creation of polished `.xlsx` financial models (`openpyxl`) and `.docx` investment reports (`python-docx`).  
+   *Visualization: Uses `plotly` to render interactive line charts, bar charts, correlation heatmaps, and DCF waterfall charts.  
 
 ## 4. Key Findings
-   *Holistic Risk-Adjusted Assessment:** The platform successfully demonstrates that evaluating asset performance requires a synthesis of cumulative returns, rolling volatility, and maximum drawdown, rather than looking at isolated metrics.  
-   *Qualitative Edge:Automated text-mining of SEC filings (MD&A and CEO quotes) provides critical qualitative context to purely quantitative metrics, offering a complete picture of corporate health.  
-   *Valuation Disparities:** The interactive DCF module frequently reveals actionable disparities between a stock's current trading price and its intrinsic value based on fundamental operating cash flows.  
+   *Holistic Risk-Adjusted Assessment: The platform successfully demonstrates that evaluating asset performance requires a synthesis of cumulative returns, rolling volatility, and maximum drawdown, rather than looking at isolated metrics.  
+   *Qualitative Edge: Automated text-mining of SEC filings (MD&A and CEO quotes) provides critical qualitative context to purely quantitative metrics, offering a complete picture of corporate health.  
+   *Valuation Disparities: The interactive DCF module frequently reveals actionable disparities between a stock's current trading price and its intrinsic value based on fundamental operating cash flows.  
 
 ## 5. How to Run (Local Deployment)
 
