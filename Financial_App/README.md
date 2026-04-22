@@ -26,51 +26,53 @@
 
 ## 5. How to Run (Local Deployment)
 
-   *Step 1: Download and Save the Project  
+*Step 1: Download and Save the Project  
 1. Download the project files (or clone the repository).
-2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).
+2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).  
 
-   *Step 2: Open Terminal and Navigate to the Folder  
+*Step 2: Open Terminal and Navigate to the Folder.  
 You must point your terminal to the exact location where you saved the folder.（For example, if you save the project folder on your computer desktop, the exact terminal path to the project is the desktop.）
 
-   ·For macOS (Apple)
-   1. Open the **Terminal** application (Press `Command + Space`, type `Terminal`, and press Enter).
-   2. Use the `cd` (change directory) command to navigate to your folder. Please refer to the instruction template:
-   cd/Users/"Username"/"The location of the project folder"/"Folder name"
+·For macOS (Apple)  
+1. Open the **Terminal** application (Press `Command + Space`, type `Terminal`, and press Enter).
+2. Use the `cd` (change directory) command to navigate to your folder. Please refer to the instruction template:  
+
+   cd/Users/"Username"/"The location of the project folder"/"Folder name"  
  
-   For example, if your computer username is "wuduu", the project folder is located on the desktop, and the folder name is "Financial_App", type:
+For example, if your computer username is "wuduu", the project folder is located on the desktop, and the folder name is "Financial_App", type:  
      
-   cd /Users/wuduu/Desktop/Financial_App
+   cd /Users/wuduu/Desktop/Financial_App  
   
 
-   ·For Windows Users
-   1. Open the **Command Prompt** (Press `Windows Key + R`, type `cmd`, and press Enter).
-   2. Use the `cd` command to navigate to your folder. For example:
+·For Windows Users
+1. Open the **Command Prompt** (Press `Windows Key + R`, type `cmd`, and press Enter).  
+2. Use the `cd` command to navigate to your folder. For example:  
 
-   cd C:/Users/”YourUsername“/"The location of the project folder"/"Folder name"
+cd C:/Users/”YourUsername“/"The location of the project folder"/"Folder name"  
 
-   For example, if your computer username is "Amy", the project folder is located on the desktop, and the folder name is "Financial_App", type:
-   If files saved to the desktop are stored by default on the C drive, type:  
+For example, if your computer username is "Amy", the project folder is located on the desktop, and the folder name is "Financial_App":  
+If files saved to the desktop are stored by default on the C drive, type:  
 
-   cd C:/Users/Amy/Desktop/Financial_App
-   Otherwise,  
+cd C:/Users/Amy/Desktop/Financial_App  
+   
+Otherwise,  
 
-   cd (the storage location of desktop files, eg. C or D or F):/Users/Amy/Desktop/Financial_App  
+cd (the storage location of desktop files, eg. C or D or F):/Users/Amy/Desktop/Financial_App  
 
 
-   *Step 3: Install Required Dependencies：  
-   Once your terminal is operating inside the correct project folder, install all necessary Python libraries by executing the following command:
+*Step 3: Install Required Dependencies：  
+Once your terminal is operating inside the correct project folder, install all necessary Python libraries by executing the following command:
 
 pip install streamlit pandas numpy sqlalchemy plotly openpyxl python-docx wbdata sec-edgar-downloader kaleido psycopg2-binary
    
-   *Step 4: Run the Application
-   After the installation process finishes completely, launch the application by running:  
+*Step 4: Run the Application
+After the installation process finishes completely, launch the application by running:  
    
-   streamlit run app.py
+streamlit run app.py
    
-   This will start the local server and automatically open the interactive web interface in your default browser.
+This will start the local server and automatically open the interactive web interface in your default browser.
 
-   ·Note: A valid WRDS (Wharton Research Data Services) account is required to log in via the app's sidebar to connect to the PostgreSQL database for market data retrieval.（After being redirected to the website, you need to log in to your WRDS account.). After entering your WRDS username and password, use the DUO application linked to your account. A login request may be sent to the DUO app on your bound mobile device. If a request appears, simply approve it to complete the login successfully.
+·Note: A valid WRDS (Wharton Research Data Services) account is required to log in via the app's sidebar to connect to the PostgreSQL database for market data retrieval.（After being redirected to the website, you need to log in to your WRDS account.). After entering your WRDS username and password, use the DUO application linked to your account. A login request may be sent to the DUO app on your bound mobile device. If a request appears, simply approve it to complete the login successfully.
 
 ## 6. Product Link / Demo
    App Link: [local run]
