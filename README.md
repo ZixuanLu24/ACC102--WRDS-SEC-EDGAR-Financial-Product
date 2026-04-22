@@ -7,11 +7,13 @@
 
 ## 2. Data Sources
    
-   *WRDS CRSP Database: Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL. 
+   *WRDS CRSP Database: Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.  
+   
    Access Link: https://wrds-www.wharton.upenn.edu/  
    
    *SEC EDGAR API: Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).   
    Access Link: https://wrds-www.wharton.upenn.edu/  
+   
    *World Bank API: Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.   
    https://data.worldbank.org/  
    
