@@ -29,7 +29,7 @@
 
    *Step 1: Download and Save the Project  
 1. Download the project files (or clone the repository).  
-2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).  
+2. Extract and save the project folder to a specific, easy-to-find location on your computer (For example, save it directly to the desktop. It is recommended to save files to the desktop for easy access.).
 
    *Step 2: Open Terminal and Navigate to the Folder
 You must point your terminal to the exact location where you saved the folder.（For example, if you save the project folder on your computer desktop, the exact terminal path to the project is the desktop.）  
