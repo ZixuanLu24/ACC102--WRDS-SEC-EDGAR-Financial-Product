@@ -76,9 +76,13 @@ You must point your terminal to the exact location where you saved the folder.�
  
 ## 7. Limitations & Next Steps
    ·The application depends heavily on the availability and uptime of the WRDS PostgreSQL database and SEC EDGAR API.
+   
    ·Current SEC text extraction relies on basic regex and heuristic rules, which may miss nuanced qualitative statements or non-standard filing formats.
+   
    ·Text embedded in images or complex nested HTML tables in SEC filings cannot be parsed, leading to occasional “Data not found” errors.
+   
    ·The current f‑string SQL query format introduces potential SQL injection risks in enterprise environments.
+   
    ·SEC EDGAR API rate limits may cause timeouts during bulk ticker requests.
 
    Next Steps: 
