@@ -41,7 +41,7 @@ You must point your terminal to the exact location where you saved the folder.ï¼
  
    For example, if your computer username is "wuduu", the project folder is located on the desktop, and the folder name is "Financial_App", type:
      
-    cd /Users/wuduu/Desktop/Financial_App
+   cd /Users/wuduu/Desktop/Financial_App
   
 
    Â·For Windows Users:**
