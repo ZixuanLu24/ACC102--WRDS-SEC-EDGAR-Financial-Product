@@ -2,14 +2,14 @@
 ## WRDS & SEC EDGAR Financial Product
  
 ## 1. Problem & User
-   ·This interactive data analysis tool is designed for financial analysts, finance students, and investors. It solves the critical problem of fragmented financial data by integrating quantitative market data (WRDS), fundamental corporate data (SEC), and macroeconomic indicators (World Bank) into a single, seamless interactive platform.Users can use this tool for interactive visual WRDS data export, calculation of 20+ core financial indicators, and SEC EDGAR integration to crawl and parse 10‑K, 10‑Q, 8‑K filings and reconstruct US GAAP financial statements. It supports an interactive DCF model with real‑time OCF data and waterfall visualization, plus market benchmark analysis to compare target companies against major indices (SPY for S&P 500, QQQ for Nasdaq 100).
+   *This interactive data analysis tool is designed for financial analysts, finance students, and investors. It solves the critical problem of fragmented financial data by integrating quantitative market data (WRDS), fundamental corporate data (SEC), and macroeconomic indicators (World Bank) into a single, seamless interactive platform.Users can use this tool for interactive visual WRDS data export, calculation of 20+ core financial indicators, and SEC EDGAR integration to crawl and parse 10‑K, 10‑Q, 8‑K filings and reconstruct US GAAP financial statements. It supports an interactive DCF model with real‑time OCF data and waterfall visualization, plus market benchmark analysis to compare target companies against major indices (SPY for S&P 500, QQQ for Nasdaq 100).
 
 
 ## 2. Data Sources
-   ·WRDS CRSP Database:** Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.
-   ·SEC EDGAR API:** Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).
-   ·World Bank API:** Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.
-   ·Access Date:* Live API and database retrieval at runtime.
+   *WRDS CRSP Database:** Provides daily stock prices, returns, and trading volumes (`crsp.dsf`, `crsp.msenames`). Accessed dynamically via PostgreSQL.
+   *SEC EDGAR API:** Enables live retrieval of corporate filings (10-K, 10-Q, 8-K), company facts (US GAAP metrics including Operating Cash Flow, Net Income, Revenue), and qualitative text insights (MD&A, Risk Factors).
+   *World Bank API:** Supplies macroeconomic indicators (GDP Growth, CPI, Unemployment) for broader market context.
+   *Access Date:* Live API and database retrieval at runtime.
 
 ## 3. Methodology
    ·Data Acquisition:** Utilizes `sqlalchemy` for secure WRDS database queries and `requests` for RESTful API calls to SEC EDGAR and the World Bank.
