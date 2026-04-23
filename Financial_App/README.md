@@ -82,7 +82,6 @@ You must point your terminal to the exact location where you saved the folder.ï¼
 ## 6. Product Link / Demo
    App Link: [https://github.com/ZixuanLu24/ACC102--WRDS-SEC-EDGAR-Financial-Product.git]
 
-   Demo Video: []
  
 ## 7. Limitations & Next Steps
    *The application depends heavily on the availability and uptime of the WRDS PostgreSQL database and SEC EDGAR API.  
