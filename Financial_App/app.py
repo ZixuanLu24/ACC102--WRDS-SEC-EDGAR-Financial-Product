@@ -3487,7 +3487,7 @@ elif APP_PAGE == "Report Generator":
                                     df_metrics = pd.DataFrame(comp_rows)
                                     st.dataframe(df_metrics, use_container_width=True, hide_index=True)
 
-                                    # --- 散点图 (Risk vs Return) ---
+                                    # ---  (Risk vs Return) ---
                                     st.subheader("⚖️ Risk vs Return Profile")
                                     # Copy and convert strings to float for plotting
                                     df_plot = df_metrics.copy()
@@ -3506,7 +3506,7 @@ elif APP_PAGE == "Report Generator":
                                     fig_scatter.update_layout(template="plotly_dark", showlegend=False)
                                     st.plotly_chart(fig_scatter, use_container_width=True)
 
-                                    # --- 直方图 (Return Distribution) ---
+                                    # ---  (Return Distribution) ---
                                     st.subheader("📊 Return Distribution (Histogram)")
                                     fig_hist = go.Figure()
                                     # Add benchmark trace
@@ -3531,7 +3531,7 @@ elif APP_PAGE == "Report Generator":
                                     )
                                     st.plotly_chart(fig_hist, use_container_width=True)
 
-                                    # --- 导出功能 (Export) ---
+                                    # ---  (Export) ---
                                     st.markdown("---")
                                     st.subheader("📥 Export Comparison Report")
                                     
