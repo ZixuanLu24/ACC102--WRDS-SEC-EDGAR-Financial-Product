@@ -81,6 +81,7 @@ You must point your terminal to the exact location where you saved the folder.ï¼
 
 ## 6. Product Link / Demo
    App Link: [https://github.com/ZixuanLu24/ACC102--WRDS-SEC-EDGAR-Financial-Product.git]  
+   Demo Link: [https://video.xjtlu.edu.cn/Mediasite/Channel/556fdc2c32b340f58d12b8179e0284435f/headless/watch/071ea5a3ee634e66b7c705a59d3b75ee1d]  
 
  
 ## 7. Limitations & Next Steps
