@@ -80,7 +80,8 @@ You must point your terminal to the exact location where you saved the folder.ï¼
    *Note: A valid WRDS (Wharton Research Data Services) account is required to log in via the app's sidebar to connect to the PostgreSQL database for market data retrieval.ï¼ˆAfter being redirected to the website, you need to log in to your WRDS account.). After entering your WRDS username and password, use the DUO application linked to your account. A login request may be sent to the DUO app on your bound mobile device. If a request appears, simply approve it to complete the login successfully.
 
 ## 6. Product Link / Demo
-   App Link: [https://github.com/ZixuanLu24/ACC102--WRDS-SEC-EDGAR-Financial-Product.git]
+   App Link: [https://github.com/ZixuanLu24/ACC102--WRDS-SEC-EDGAR-Financial-Product.git]  
+   Demo Link: [https://video.xjtlu.edu.cn/Mediasite/Channel/556fdc2c32b340f58d12b8179e0284435f/headless/watch/071ea5a3ee634e66b7c705a59d3b75ee1d]  
 
  
 ## 7. Limitations & Next Steps
